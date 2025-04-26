@@ -11,7 +11,7 @@ from config import *
 
 
 name ="""
- BY CODEFLIX BOTS
+ BY ANIME_RTXX BOTS
 """
 
 
@@ -45,7 +45,7 @@ class Bot(Client):
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
                 self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL1 value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL1}")
-                self.LOGGER(__name__).info("\nBot Stopped. https://t.me/weebs_support for support")
+                self.LOGGER(__name__).info("\nBot Stopped. https://t.me/ANIME_RTXXZ for support")
                 sys.exit()
         if FORCE_SUB_CHANNEL2:
             try:
@@ -120,7 +120,7 @@ class Bot(Client):
         await web.TCPSite(app, "0.0.0.0", PORT).start()
 
 
-        try: await self.send_message(OWNER_ID, text = f"<b><blockquote>- Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ by @Codeflix_Bots</blockquote></b>")
+        try: await self.send_message(OWNER_ID, text = f"<b><blockquote>- Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ by @ANIME_RTXX</blockquote></b>")
         except: pass
 
     async def stop(self, *args):
@@ -131,7 +131,7 @@ class Bot(Client):
         """Run the bot."""
         loop = asyncio.get_event_loop()
         loop.run_until_complete(self.start())
-        self.LOGGER(__name__).info("Bot is now running. Thanks to @rohit_1888")
+        self.LOGGER(__name__).info("Bot is now running. Thanks to @CLUTCH008")
         try:
             loop.run_forever()
         except KeyboardInterrupt:
